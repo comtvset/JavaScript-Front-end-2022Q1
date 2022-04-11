@@ -147,6 +147,7 @@
     order: 0;
     flex-grow: 0;
     margin: 10px 0px;
+    transition: all 0.5s ease;
   }
 
   .nav-link:hover, .nav-link:focus, .nav-link:active {
@@ -318,6 +319,7 @@
     border: 2px solid #F1CDB3;
     margin-top: 193px;
     cursor: pointer;
+    transition: all 0.5s ease;
   }
 
   .left-btn:hover, .left-btn:active {
@@ -334,6 +336,7 @@
     margin-left: 54px;
     margin-top: 193px;
     cursor: pointer;
+    transition: all 0.5s ease;
   }
 
   .right-btn:hover, .right-btn:active {
@@ -391,11 +394,14 @@
     transition: all 0.5s ease;
   }
 
-  .pets_card:hover .pets_card-btn {
-    /* transition: all 0.5s ease;
+  .pets_card:hover {
+    transition: all 0.5s ease;
     -webkit-box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
-    box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1); */
+    box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
+  }
+
+  .pets_card:hover .pets_card-btn {    
     background: #FDDCC4;
     transition: all 0.5s ease;
   }  
@@ -415,6 +421,7 @@
     
     background: #F6F6F6;
     border-radius: 100px;
+    transition: all 0.5s ease;
 
     /* margin: 0; */
     border: 2px solid #FDDCC4;
@@ -452,6 +459,7 @@
     margin-top: 60px;
     margin-left: 510px;
     margin-bottom: 100px;
+    transition: all 0.5s ease;
   }
 
   .reset-btn:hover, .reset-btn:active {
@@ -606,9 +614,11 @@
     border-radius: 9px;
     margin-top: -6px;
     cursor: pointer;
+    transition: all 0.5s ease;
   }
   .account-style:hover {
     background: #FDDCC4;
+    transition: all 0.5s ease;
   }
 
   .card-syle {
