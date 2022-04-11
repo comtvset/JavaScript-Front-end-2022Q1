@@ -10,6 +10,230 @@
     <link rel="icon" href="/shelter/assets/images/start-screen-puppy.png">
 </head>
 <body>
+    <header>
+        <!-- Header (<header> содержит только логотип и панель навигации)
+            1. Интерактивная панель навигации:
+                a. по умолчанию должен быть подсвечен элемент About the shelter;
+                b. подсвеченный элемент About the shelter может не иметь hover-эффектов.
+            2. Нажатие на Our pets перебрасывает нас на страницу our pets.
+            3. Нажатие на Help the shelter перебрасывает нас на блок Help, расположенный на этой же странице (якорная ссылка).
+            4. Нажатие на Contacts перебрасывает нас на блок Footer, расположенный на этой же странице (якорная ссылка).
+            5. Логотип находится слева. Логотип состоит из текстовых элементов (т.е. не картинка). Нажатие на логотип оставляет нас на текущей странице.
+            6. На странице обязательно должен присутствовать один элемент <h1>. Можно сделать его с текстом Cozy House.
+            7. Хедер "липким" делать не нужно. Т.е. при скролле он остается на своей позиции. -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper_header">
+                    <a class="logo" href="#">
+                        <h1>Cozy House</h1>
+                        <p class="text_logo">Shelter for pets in Boston</p>
+                    </a>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#about" class="nav-link active">About the shelter</a></li>
+                            <li class="nav-item"><a href="#pets" class="nav-link">Our pets</a></li>
+                            <li class="nav-item"><a href="#help" class="nav-link">Help the shelter</a></li>
+                            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>    
+    </header>
+
+    <main>
+        <!-- Блок Not only
+        1. Кнопка Make a Friend должна быть интерактивной.
+        2. Нажатие на Make a Friend перебрасывает нас на блок Our Friends, расположенный на этой же странице (якорная ссылка).
+        3. Фон блоков можно сделать градиентом.
+        4. Картинка собаки и текст - разные блоки, которые не должны накладываться. -->
+        
+        <section class="container">
+            <div class="wrapper wrapper_no">                  
+                <div class="intro">
+                    <h2 class="no-title">Not only people need a house</h2>
+                    <p class="no-subtitle">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                    <button class="no-button">Make a friend</button>
+                </div> 
+                <div class="img-puppy">
+                    <img src="/shelter/assets/images/start-screen-puppy.png" alt="start-screen-puppy">
+                </div>
+            </div>  
+        </section>
+
+        <!-- Блок About
+            Внимательно посмотрите, какого вида здесь кавычки. -->
+
+        <section class="container wrapper_about-1">
+            <div class="wrapper wrapper_about-2">
+                <div class="img-about-pets">
+                    <img src="/shelter/assets/images/about-pets.png" alt="about-pets">
+                </div>
+                <div class="heading_about">
+                    <h3 class="title">About the shelter “Cozy House”</h3>
+                    <p class="about-subtitle">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                    <p class="about-subtitle">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Блок Our Friends
+        1. Кнопки "влево" и "вправо" должны быть интерактивными.
+        2. Карточки с питомцами должны быть интерактивными при наведении на любую область карточки. Наведение на карточку меняет курсор, делает подсветку кнопки Learn more и меняет фон.
+        3. Кнопки Learn more должны быть интерактивными.
+        4. Кнопка Get to know the rest должна быть интерактивной.
+        5. Нажатие на Get to know the rest перебрасывает нас на страницу our pets. -->
+
+        <section class="container wrapper_friends-1">
+            <div class="heading_friends">
+                <h3 class="title title_friends">Our friends who<br>are looking for a house</h3>                    
+            </div> 
+            <div class="wrapper wrapper_friends-2">                
+                <button class="left-btn">&#10142;</button>
+                <div class="wrapper_pets">
+                    <div class="pets_card">
+                        <img src="/shelter/assets/images/pets-katrine1.png" alt="Katrine" class="pets-katrine1">
+                        <h3 class="pets_h3">Katrine</h3>
+                        <button class="pets_card-btn">Learn more</button>
+                    </div>
+                    <div class="pets_card">
+                        <img src="/shelter/assets/images/pets-jennifer.png" alt="Jennifer" class="pets-jennifer">
+                        <h3 class="pets_h3">Jennifer</h3>
+                        <button class="pets_card-btn">Learn more</button>
+                    </div>
+                    <div class="pets_card">
+                        <img src="/shelter/assets/images/pets-woody.png" alt="Woody" class="pets-woody">
+                        <h3 class="pets_h3">Woody</h3>
+                        <button class="pets_card-btn">Learn more</button>
+                    </div>
+                </div>
+                <button class="right-btn">&#10142;</button>
+            </div>
+            <div>
+                <button class="reset-btn">Get to know the rest</button>
+            </div>
+        </section>
+
+        <!-- Блок Help
+        1. Для позиционирования элементов блока используется сеточная верстка (flexbox или grid).
+        2. Расположение элементов: обязательно 5 сверху, 4 снизу. -->
+
+        <section class="container unit_color" id="help">
+            <div class="wrapper wrapper_help">
+                <div class="unit_help">
+                    <h3 class="title">How you can help our shelter</h3>
+                </div>
+                <div class="help_list">
+                    <div class="container-up">
+                        <div class="text_center item1">
+                            <img src="/shelter/assets/svg/icon-pet-food.svg" alt="food" class="food">
+                            <h4 class="help_h4">Pet food</h4>
+                        </div>
+                        <div class="text_center item2">
+                            <img src="/shelter/assets/svg/icon-transportation.svg" alt="transportation" class="transportation">
+                            <h4 class="help_h4">Transportation</h4>
+                        </div>
+                        <div class="text_center item3">
+                            <img src="/shelter/assets/svg/icon-toys.svg" alt="toys" class="toys">
+                            <h4 class="help_h4">Toys</h4>
+                        </div>
+                        <div class="text_center item4">
+                            <img src="/shelter/assets/svg/icon-bowls-and-cups.svg" alt="bowls-and-cups" class="bowls-and-cups">
+                            <h4 class="help_h4">Bowls and cups</h4>
+                        </div>
+                        <div class="text_center item5">
+                            <img src="/shelter/assets/svg/icon-shampoos.svg" alt="shampoos" class="shampoos">
+                            <h4 class="help_h4">Shampoos</h4>
+                        </div>
+                    </div>
+
+                    <div class="container-down">
+                        <div class="text_center item6">
+                            <img src="/shelter/assets/svg/icon-vitamins.svg" alt="vitamins" class="vitamins">
+                            <h4 class="help_h4">Vitamins</h4>
+                        </div>
+                        <div class="text_center item7">
+                            <img src="/shelter/assets/svg/icon-medicines.svg" alt="medicines" class="medicines">
+                            <h4 class="help_h4">Medicines</h4>
+                        </div>
+                        <div class="text_center item8">
+                            <img src="/shelter/assets/svg/icon-collars-leashes.svg" alt="collars-leashes" class="collars-leashes">
+                            <h4 class="help_h4">Collars / leashes</h4>
+                        </div>
+                        <div class="text_center item9">
+                            <img src="/shelter/assets/svg/icon-sleeping-area.svg" alt="sleeping-area" class="sleeping-area">
+                            <h4 class="help_h4">Sleeping areas</h4>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок In addition
+            Интерактивный блок с номером банковского счета. Номер должен быть ссылкой, которая никуда не ведет. -->
+
+        <section class="container donation">
+            <div class="wrapper wrapper_donation">
+                <div class="img_donation-dog">
+                    <img src="/shelter/assets/images/donation-dog.png" alt="donation-dog">
+                </div>
+                <div class="heading_donation-dog">
+                    <h3 class="title title_donation">You can also make a donation</h3>
+                    <h5 class="donation-subtitle">Name of the bank / Type of bank account</h5>
+                    <div class="account-style">
+                        <a href="https://www.ratujemyzwierzaki.pl/fundacjasercedlazwierzat" target="_blank"><img src="/shelter/assets/svg/credit-card.svg" alt="credit-card" class="card"></a>
+                        <span class="card-syle"><a href="https://www.ratujemyzwierzaki.pl/fundacjasercedlazwierzat" target="_blank">8380 2880 8028 8791 7435</a></span>
+                    </div>                   
+                    <p class="donation_info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div> 
+            </div>            
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <!-- Footer (<footer> содержит контакты, адрес и изображение):
+        1. При нажатии на email или его иконку должен открываться почтовый сервис.
+        2. При нажатии на телефон или его иконку должен открываться набор номера.
+        3. При нажатии на локацию должна открываться страница с google maps в отдельном окне с любой локацией на ваш выбор.
+        4. Изображение собаки, адрес и контакты - разные блоки, которые не должны накладываться друг на друга.
+        5. Фон блока можно сделать градиентом. -->
+        <section class="container" id="contacts">
+            <div class="wrapper footer_container">
+                <div class="footer-info">
+                    <div>
+                        <h3 class="h3_footer">For questions and suggestions</h3>
+                    </div>
+                    <div class="footer-style">
+                        <a href="mailto:email@shelter.com"><img src="/shelter/assets/icons/icon-email.png" alt="icon-email"></a>
+                        <p class="h4_footer"><a href="mailto:email@shelter.com">email@shelter.com</a></p>
+                    </div>
+                    <div class="footer-style down">
+                        <a href="tel:+136745677554"><img src="/shelter/assets/icons/icon-phone.png" alt="icon-phone"></a>
+                        <p class="h4_footer"><a href="tel:+136745677554">+13 674 567 75 54</a></p> <!-- callto -->
+                    </div>
+                </div>
+                <div class="box_possition-center">
+                    <div class="footer-info">
+                        <h3 class="h3_footer">We are waiting for your visit</h3>
+                    </div>
+                    <div class="footer-style">
+                        <a href="https://goo.gl/maps/9kLSLhfPfzJK4JDeA" target="_blank"><img src="/shelter/assets/icons/icon-marker.png" alt="icon-marker"></a>
+                        <p class="h4_footer"><a href="https://goo.gl/maps/9kLSLhfPfzJK4JDeA" target="_blank">1 Central Street, Boston<br>(entrance from the store)</a></p>
+                    </div>
+                    <div class="footer-style down">
+                        <a href="https://goo.gl/maps/QsFQ8yqiX3ppauqX6" target="_blank"><img src="/shelter/assets/icons/icon-marker.png" alt="icon-marker"></a>
+                        <p class="h4_footer"><a href="https://goo.gl/maps/QsFQ8yqiX3ppauqX6" target="_blank">18 South Park, London</a></p> <!-- callto -->
+                    </div>
+                </div>                
+                <div class="footer-info box_possition-right">
+                    <img src="/shelter/assets/images/footer-puppy.png" alt="footer-puppy">
+                </div>
+            </div>
+        </section>
+
+    </footer>
     
 </body>
 </html>
