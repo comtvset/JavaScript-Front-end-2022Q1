@@ -324,6 +324,7 @@
   }
   .active-btn {
     background: #F1CDB3;
+    cursor: default;
   }
 
   .btn:hover, .btn:active {
