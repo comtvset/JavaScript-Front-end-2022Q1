@@ -473,8 +473,98 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  html {
-    overflow: hidden;
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .wrapper {
+    width: 708px;
+    margin: auto;
+  }
+  .stick {
+    position: static;
+    top: 0;
+    height: 119px;
+  }
+  /* ### HEADER ### */
+  .wrapper_header {
+    margin-left: 30px;
+  }
+  .nav {
+    margin-top: 10px;
+    margin-right: 0;
+    padding-left: 0px;
+    margin-right: 31px;
+  }
+  .logo {
+    width: 200px;
+  }
+  .nav-item {
+    margin-right: 0px;
+    margin-left: 36px;
+  }
+  /* ### FRIENDS ### */
+  .wrapper_friends-1 {
+    width: 768px;
+    margin: auto;
+  }
+  .wrapper_friends-2 {
+    width: 768px;
+    margin-top: 30px;
+  }
+  .heading_friends {
+    margin-left: 185px;
+  }
+  .title_friends {
+    margin-bottom: 0px;
+  }
+  .wrapper_pets {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 93px;
+    margin-bottom: 0px;
+    width: 708px;
+  }
+  .pets_card {
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  .pets-scarlett {
+    display: none;
+  }
+  .pets-freddie {
+    display: none;
+  }
+  .button_down {
+    margin-left: 193px;
+    margin-bottom: 174px;
+    margin-top: -85px;
+  }
+  /* ### FOOTER ### */
+  .footer_container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .box_possition-center {
+    margin-left: 33px;
+  }
+  .footer-info {
+    width: 300px;
+    margin-top: -4px;
+    margin-left: 64px;
+  }
+  .box_possition-center {
+    margin-left: 39px;
+  }
+  .box_possition-right {
+    margin-left: 233px;
+    margin-top: 55px;
   }
 }
 /*# sourceMappingURL=style.css.map */
