@@ -11,16 +11,7 @@
 </head>
 <body>
     <header>
-        <!-- Header (<header> содержит только логотип и панель навигации)
-            1. Интерактивная панель навигации:
-                a. по умолчанию должен быть подсвечен элемент About the shelter;
-                b. подсвеченный элемент About the shelter может не иметь hover-эффектов.
-            2. Нажатие на Our pets перебрасывает нас на страницу our pets.
-            3. Нажатие на Help the shelter перебрасывает нас на блок Help, расположенный на этой же странице (якорная ссылка).
-            4. Нажатие на Contacts перебрасывает нас на блок Footer, расположенный на этой же странице (якорная ссылка).
-            5. Логотип находится слева. Логотип состоит из текстовых элементов (т.е. не картинка). Нажатие на логотип оставляет нас на текущей странице.
-            6. На странице обязательно должен присутствовать один элемент <h1>. Можно сделать его с текстом Cozy House.
-            7. Хедер "липким" делать не нужно. Т.е. при скролле он остается на своей позиции. -->
+       
         <div class="container">
             <div class="wrapper">
                 <div class="wrapper_header">
@@ -41,13 +32,7 @@
         </div>    
     </header>
 
-    <main>
-        <!-- Блок Not only
-        1. Кнопка Make a Friend должна быть интерактивной.
-        2. Нажатие на Make a Friend перебрасывает нас на блок Our Friends, расположенный на этой же странице (якорная ссылка).
-        3. Фон блоков можно сделать градиентом.
-        4. Картинка собаки и текст - разные блоки, которые не должны накладываться. -->
-        
+    <main>      
         <section class="container">
             <div class="wrapper wrapper_no">                  
                 <div class="intro">
@@ -61,9 +46,6 @@
             </div>  
         </section>
 
-        <!-- Блок About
-            Внимательно посмотрите, какого вида здесь кавычки. -->
-
         <section class="container wrapper_about-1">
             <div class="wrapper wrapper_about-2">
                 <div class="img-about-pets">
@@ -76,13 +58,6 @@
                 </div> 
             </div>
         </section>
-
-        <!-- Блок Our Friends
-        1. Кнопки "влево" и "вправо" должны быть интерактивными.
-        2. Карточки с питомцами должны быть интерактивными при наведении на любую область карточки. Наведение на карточку меняет курсор, делает подсветку кнопки Learn more и меняет фон.
-        3. Кнопки Learn more должны быть интерактивными.
-        4. Кнопка Get to know the rest должна быть интерактивной.
-        5. Нажатие на Get to know the rest перебрасывает нас на страницу our pets. -->
 
         <section class="container wrapper_friends-1" id="friends">
             <div class="heading_friends">
@@ -114,17 +89,12 @@
             </div>
         </section>
 
-        <!-- Блок Help
-        1. Для позиционирования элементов блока используется сеточная верстка (flexbox или grid).
-        2. Расположение элементов: обязательно 5 сверху, 4 снизу. -->
-
         <section class="container unit_color" id="help">
             <div class="wrapper wrapper_help">
                 <div class="unit_help">
                     <h3 class="title">How you can help our shelter</h3>
                 </div>
                 <div class="help_list">
-                    <div class="container-up">
                         <div class="text_center item1">
                             <img src="../../../shelter/assets/svg/icon-pet-food.svg" alt="food" class="food">
                             <h4 class="help_h4">Pet food</h4>
@@ -145,9 +115,6 @@
                             <img src="../../../shelter/assets/svg/icon-shampoos.svg" alt="shampoos" class="shampoos">
                             <h4 class="help_h4">Shampoos</h4>
                         </div>
-                    </div>
-
-                    <div class="container-down">
                         <div class="text_center item6">
                             <img src="../../../shelter/assets/svg/icon-vitamins.svg" alt="vitamins" class="vitamins">
                             <h4 class="help_h4">Vitamins</h4>
@@ -164,13 +131,9 @@
                             <img src="../../../shelter/assets/svg/icon-sleeping-area.svg" alt="sleeping-area" class="sleeping-area">
                             <h4 class="help_h4">Sleeping areas</h4>
                         </div>
-                    </div>    
                 </div>
             </div>
         </section>
-
-        <!-- Блок In addition
-            Интерактивный блок с номером банковского счета. Номер должен быть ссылкой, которая никуда не ведет. -->
 
         <section class="container donation">
             <div class="wrapper wrapper_donation">
@@ -188,48 +151,42 @@
                 </div> 
             </div>            
         </section>
-    </main>
-
-    
+    </main>    
 
     <footer>
-        <!-- Footer (<footer> содержит контакты, адрес и изображение):
-        1. При нажатии на email или его иконку должен открываться почтовый сервис.
-        2. При нажатии на телефон или его иконку должен открываться набор номера.
-        3. При нажатии на локацию должна открываться страница с google maps в отдельном окне с любой локацией на ваш выбор.
-        4. Изображение собаки, адрес и контакты - разные блоки, которые не должны накладываться друг на друга.
-        5. Фон блока можно сделать градиентом. -->
         <section class="container" id="contacts">
-            <div class="wrapper footer_container">
-                <div class="footer-info">
-                    <div>
-                        <h3 class="h3_footer">For questions and suggestions</h3>
+            <div class="wrapper">
+                <div class="footer-blok-info">
+                    <div class="footer-info footer_container">
+                        <div>
+                            <h3 class="h3_footer">For questions and suggestions</h3>
+                        </div>
+                        <div class="footer-style">
+                            <a href="mailto:email@shelter.com"><img src="../../../shelter/assets/icons/icon-email.png" alt="icon-email"></a>
+                            <p class="h4_footer"><a href="mailto:email@shelter.com">email@shelter.com</a></p>
+                        </div>
+                        <div class="footer-style down">
+                            <a href="tel:+136745677554"><img src="../../../shelter/assets/icons/icon-phone.png" alt="icon-phone"></a>
+                            <p class="h4_footer"><a href="tel:+136745677554">+13 674 567 75 54</a></p> <!-- callto -->
+                        </div>
                     </div>
-                    <div class="footer-style">
-                        <a href="mailto:email@shelter.com"><img src="../../../shelter/assets/icons/icon-email.png" alt="icon-email"></a>
-                        <p class="h4_footer"><a href="mailto:email@shelter.com">email@shelter.com</a></p>
+                    <div class="footer-info box_possition-center">
+                        <div>
+                            <h3 class="h3_footer">We are waiting for your visit</h3>
+                        </div>
+                        <div class="footer-style">
+                            <a href="https://goo.gl/maps/9kLSLhfPfzJK4JDeA" target="_blank"><img src="../../../shelter/assets/icons/icon-marker.png" alt="icon-marker"></a>
+                            <p class="h4_footer"><a href="https://goo.gl/maps/9kLSLhfPfzJK4JDeA" target="_blank">1 Central Street, Boston<br>(entrance from the store)</a></p>
+                        </div>
+                        <div class="footer-style down">
+                            <a href="https://goo.gl/maps/QsFQ8yqiX3ppauqX6" target="_blank"><img src="../../../shelter/assets/icons/icon-marker.png" alt="icon-marker"></a>
+                            <p class="h4_footer"><a href="https://goo.gl/maps/QsFQ8yqiX3ppauqX6" target="_blank">18 South Park, London</a></p> <!-- callto -->
+                        </div>
+                    </div>                
+                    <div class="footer-info box_possition-right">
+                        <img src="../../../shelter/assets/images/footer-puppy.png" alt="footer-puppy">
                     </div>
-                    <div class="footer-style down">
-                        <a href="tel:+136745677554"><img src="../../../shelter/assets/icons/icon-phone.png" alt="icon-phone"></a>
-                        <p class="h4_footer"><a href="tel:+136745677554">+13 674 567 75 54</a></p> <!-- callto -->
-                    </div>
-                </div>
-                <div class="box_possition-center">
-                    <div class="footer-info">
-                        <h3 class="h3_footer">We are waiting for your visit</h3>
-                    </div>
-                    <div class="footer-style">
-                        <a href="https://goo.gl/maps/9kLSLhfPfzJK4JDeA" target="_blank"><img src="../../../shelter/assets/icons/icon-marker.png" alt="icon-marker"></a>
-                        <p class="h4_footer"><a href="https://goo.gl/maps/9kLSLhfPfzJK4JDeA" target="_blank">1 Central Street, Boston<br>(entrance from the store)</a></p>
-                    </div>
-                    <div class="footer-style down">
-                        <a href="https://goo.gl/maps/QsFQ8yqiX3ppauqX6" target="_blank"><img src="../../../shelter/assets/icons/icon-marker.png" alt="icon-marker"></a>
-                        <p class="h4_footer"><a href="https://goo.gl/maps/QsFQ8yqiX3ppauqX6" target="_blank">18 South Park, London</a></p> <!-- callto -->
-                    </div>
-                </div>                
-                <div class="footer-info box_possition-right">
-                    <img src="../../../shelter/assets/images/footer-puppy.png" alt="footer-puppy">
-                </div>
+                </div>    
             </div>
         </section>
 
