@@ -632,7 +632,7 @@
     margin-top: 22px;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
    
     .container {
       width: 768px;
@@ -649,6 +649,7 @@
     .wrapper_header {
       @include flexRow();
       margin-top: 30px;
+      overflow-y: hidden;
     }
 
     .nav {

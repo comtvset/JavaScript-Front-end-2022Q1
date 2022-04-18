@@ -865,7 +865,7 @@ h1 {
   margin-top: 22px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .container {
     width: 768px;
     margin: 0 auto;
@@ -886,6 +886,7 @@ h1 {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-top: 30px;
+    overflow-y: hidden;
   }
   .nav {
     margin-top: 11px;
