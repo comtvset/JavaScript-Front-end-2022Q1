@@ -152,12 +152,11 @@
     flex-grow: 0;
     margin: 10px 0px;
     @extend %transition;
-  }
-  
-  .nav-link:hover, .nav-link:focus, .nav-link:active {
-    @extend %transition;
-    color: #292929;
-    font-weight: 300;
+    &:hover, &:focus, &:active {
+      @extend %transition;
+      color: #292929;
+      font-weight: 300;
+    }
   }
 
   /* ### FRIENDS ### */
@@ -225,13 +224,12 @@
     border-radius: 9px;
     cursor: pointer;
     transition: all 0.5s ease;
-  }
-
-  .pets_card:hover {
-    transition: all 0.5s ease;
-    -webkit-box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
-    box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
+    &:hover {
+      transition: all 0.5s ease;
+      -webkit-box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
+      -moz-box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
+      box-shadow: 0px 3px 26px -11px rgba(66, 68, 90, 1);
+    }
   }
 
   .pets_card:hover .pets_card-btn {    
@@ -251,12 +249,11 @@
     margin-left: 41px;
     transition: all 0.5s ease;
     cursor: pointer;
-  }
-
-  .reset-btn:hover, .reset-btn:active {
-    @extend %transition;
-    background: #FDDCC4;
-    border: 2px solid #FDDCC4;
+    &:hover, &:active {
+      @extend %transition;
+      background: #FDDCC4;
+      border: 2px solid #FDDCC4;
+    }
   }
 
   .button_down {
@@ -279,28 +276,26 @@
     cursor: pointer;
     transition: all 0.5s ease;
     background-color: transparent;
+    &:hover, &:active {
+      @extend %transition;
+      background: #F1CDB3;
+      border: 2px solid #F1CDB3;
+    }
   }
   .active-btn {
     background: #F1CDB3;
     cursor: default;
   }
 
-  .btn:hover, .btn:active {
-    @extend %transition;
-    background: #F1CDB3;
-    border: 2px solid #F1CDB3;
-  }
-
   .gray-style {
     color: #CDCDCD;
     border: 2px solid #CDCDCD;
-    cursor: not-allowed;     
-  }
-
-  .gray-style:hover, .gray-style:active {
-    color: #CDCDCD;
-    border: 2px solid #CDCDCD;
-    background: transparent;
+    cursor: not-allowed;
+    &:hover, &:active {
+      color: #CDCDCD;
+      border: 2px solid #CDCDCD;
+      background: transparent;
+    }   
   }
 
   /* ### FOOTER ### */
@@ -345,14 +340,12 @@
     letter-spacing: 0.06em;
     color: #F1CDB3;
     margin-left: 20px;
-    /* margin-top: -5px; */
   }
 
   .footer-style {
     @include flexRow();
     justify-content: flex-start;
-    align-items: center;   
-    /* border: 2px solid #ff6a00;  */
+    align-items: center;
     height: 50px;
     margin-top: -5px;
     cursor: pointer;
@@ -360,4 +353,10 @@
 
   .down {
     margin-top: 22px;
+  }
+
+  @media (max-width: 768px) {
+    html { 
+      overflow:  hidden; 
+    }
   }

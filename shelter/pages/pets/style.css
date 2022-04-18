@@ -37,7 +37,7 @@ a {
           box-sizing: border-box;
 }
 
-.nav-link, .nav-link:hover, .nav-link:focus, .nav-link:active, .pets_card:hover .pets_card-btn, .reset-btn:hover, .reset-btn:active, .btn:hover, .btn:active {
+.nav-link, .nav-link:hover, .nav-link:focus, .nav-link:active, .pets_card:hover .pets_card-btn, .pets_card-btn:hover, .pets_card-btn:active, .btn:hover, .btn:active {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -319,7 +319,7 @@ h1 {
   cursor: pointer;
 }
 
-.reset-btn:hover, .reset-btn:active {
+.pets_card-btn:hover, .pets_card-btn:active {
   background: #FDDCC4;
   border: 2px solid #FDDCC4;
 }
@@ -359,14 +359,14 @@ h1 {
   background-color: transparent;
 }
 
-.active-btn {
-  background: #F1CDB3;
-  cursor: default;
-}
-
 .btn:hover, .btn:active {
   background: #F1CDB3;
   border: 2px solid #F1CDB3;
+}
+
+.active-btn {
+  background: #F1CDB3;
+  cursor: default;
 }
 
 .gray-style {
@@ -445,7 +445,6 @@ h1 {
   letter-spacing: 0.06em;
   color: #F1CDB3;
   margin-left: 20px;
-  /* margin-top: -5px; */
 }
 
 .footer-style {
@@ -464,7 +463,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 2px solid #ff6a00;  */
   height: 50px;
   margin-top: -5px;
   cursor: pointer;
@@ -472,5 +470,11 @@ h1 {
 
 .down {
   margin-top: 22px;
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=style.css.map */
