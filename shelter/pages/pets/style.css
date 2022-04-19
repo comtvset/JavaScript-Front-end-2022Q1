@@ -487,11 +487,6 @@ h1 {
     width: 708px;
     margin: auto;
   }
-  .stick {
-    position: static;
-    top: 0;
-    height: 119px;
-  }
   /* ### HEADER ### */
   .wrapper_header {
     margin-left: 30px;
@@ -599,10 +594,6 @@ h1 {
   .wrapper_header {
     margin-left: 10px;
     margin-top: 1px;
-  }
-  .stick {
-    position: static;
-    top: 0;
   }
   /* ### FRIENDS ### */
   .heading_friends {
