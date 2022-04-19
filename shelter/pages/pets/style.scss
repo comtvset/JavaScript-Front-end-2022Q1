@@ -161,6 +161,7 @@
 
   .simbol_320 {
     display: none;
+    cursor: pointer;
   }
 
   /* ### FRIENDS ### */
@@ -574,68 +575,65 @@
     .footer-blok-info {
     @include flexColumn();
     padding-left: 10px;
-  }
+    }
 
-  .h3_footer {
-    margin: 0;
-  }
+    .h3_footer {
+      margin: 0;
+    }
 
-  .f_1 {
-    font-size: 25px;
-    text-align: center;
-    margin-left: 1px;
-    margin-top: 7px;
-  }
+    .f_1 {
+      font-size: 25px;
+      text-align: center;
+      margin-left: 1px;
+      margin-top: 7px;
+    }
 
-  .footer-style {   
-    margin: 0;  
-  }
+    .footer-style {   
+      margin: 0;  
+    }
 
-  .box_up1 {
-    margin-top: 32px;
-    margin-left: 25px;
-  }
+    .box_up1 {
+      margin-top: 32px;
+      margin-left: 25px;
+    }
 
-  .box_down1 {
-    margin-top: 22px;
-    margin-left: 30px;
-  }
+    .box_down1 {
+      margin-top: 22px;
+      margin-left: 30px;
+    }
 
-  .box_possition-center {
-    // margin-left: 15px;
-    width: 320px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
+    .box_possition-center {
+      width: 320px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
 
-  .f_2 {
-    font-size: 25px;
-    text-align: center;
-    width: 250px;
-    margin-left: 25px;
-    margin-top: 28px;
-  }
+    .f_2 {
+      font-size: 25px;
+      text-align: center;
+      width: 250px;
+      margin-left: 25px;
+      margin-top: 28px;
+    }
 
-  .box_up2 {
-    margin-top: 39px;
-    margin-left: 0px;
-  }
+    .box_up2 {
+      margin-top: 39px;
+      margin-left: 0px;
+    }
 
-  .box_down2 {
-    margin-top: 29px;
-    margin-left: 0px;
-  }
+    .box_down2 {
+      margin-top: 29px;
+      margin-left: 0px;
+    }
 
-  .dog_size {
-    width: 260px;
-    height: 269px;
-  }
-  
-  .box_possition-right {
-    margin-left: 20px;
-    margin-top: 31px;
-  }
+    .dog_size {
+      width: 260px;
+      height: 269px;
+    }
+    
+    .box_possition-right {
+      margin-left: 20px;
+      margin-top: 31px;
+    }
 
-
-
-  }
+}
