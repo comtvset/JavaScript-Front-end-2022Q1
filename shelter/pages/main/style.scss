@@ -168,6 +168,9 @@
       }
   }
 
+  .simbol_320 {
+    display: none;
+  }
   
 
   /* ### NOT ONLY ### */
@@ -290,6 +293,7 @@
   }
 
   .left-btn {
+    position: reltive;
     @include btnArrow();
     transform: rotate(-180deg);
     margin-top: 193px;
@@ -303,6 +307,7 @@
   }
 
   .right-btn {
+    position: reltive;
     @include btnArrow();
     margin-left: 54px;
     margin-top: 193px;
@@ -666,7 +671,10 @@
       margin-left: 36px;
     }
 
-
+    .simbol_320 {
+      display: none;
+    }
+    
     /* ### NOT ONLY ### */
 
     .wrapper_no {
@@ -855,13 +863,405 @@
     margin-top: -5px;   
   }
 
-  .down {
+  .box_down1 {
+    margin-top: 21px;
+  }
+
+  .box_down2 {
     margin-top: 21px;
   }
 
   .box_possition-right {
     margin-left: 203px;
     margin-top: 55px;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .container {
+    width: 320px;
+    margin: 0 auto;
+
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    width: 300px;
+    margin: auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .simbol_320 {
+    display: block;
+    position: absolute;
+    margin-left: 226px;
+    margin-top: 0px;
+    color: #F1CDB3;
+    font-size: 60px;
+  }
+
+  .wrapper_header {
+    margin-top: 30px;
+  }
+  
+  /* ### NOT ONLY ### */
+
+  .wrapper_no {
+    @include flexColumn();
+    // justify-content: space-between;
+  }
+
+  .intro {
+    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 3;
+    margin-top: 60px;
+  }
+
+  .no-title {
+    font-size: 25px;
+    width: 200px;
+    height: 65px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  .no-subtitle {
+    width: 300px;
+    height: 96px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .no-button {
+    margin-left: 46px;
+  }
+
+  .img-puppy {
+    width: 260px;
+    margin-top: 80px;
+    margin-left: 38px;
+  }
+
+  /* ### ABOUT ### */
+
+  .wrapper_about-2 {
+    @include flexColumn();
+    flex-direction: column-reverse;
+  }
+
+  .heading_about {
+    margin-top: 42px;
+    margin-left: 15px;
+  }
+
+  .title {
+    font-size: 25px;
+    width: 250px;
+    height: 65px;
+    margin-left: 11px;
+    text-align: center;
+  }
+
+  .about-subtitle {
+    margin-top: 0px;
+    margin-bottom: 70px;
+    text-align: justify;
+    width: 270px;    
+  }
+
+  .i_a_p {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-about-pets {
+    width: 260px;
+    height: 354px;
+    margin-top: 115px;
+    margin-left: 19px;
+    margin-bottom: 40px;
+  }
+
+  /* ### FRIENDS ### */
+
+  .heading_friends {   
+    height: 90px;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: 43px;    
+    text-align: center;
+  }
+
+  .title_friends {
+    width: 300px;
+  }
+
+  .wrapper_pets {
+    @include flexRow();
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-top: 17px;
+    width: 275px;
+    height: 435px;
+    overflow: hidden;
+  }
+
+  .left-btn {
+    position: absolute;
+    margin-top: 472px;
+    margin-left: 59px;
+  }
+
+  .right-btn {
+    position: absolute;
+    margin-top: 472px;
+    margin-left: 191px;
+  }
+
+  .reset-btn {
+    margin-left: 30px;
+    margin-top: 130px;
+    margin-bottom: 41px;
+  }
+
+  /* ### HELP ### */
+
+  .unit_help {
+    margin-left: 15px;
+    padding-top: 43px;
+  }
+
+  .help_list {
+    width: 299px;
+    height: 555px;
+    margin-left: 1px;
+    margin-bottom: 44px;
+    margin-top: 15px;
+  }
+
+  .help_h4 {
+    font-size: 15px;
+    line-height: 110%;
+    margin-top: 16px;
+  }
+
+  .item1 {
+    width: 130px;
+    margin-left: 4px;
+    margin-top: 1px;
+    margin-right: 0px;    
+  }
+  .food {
+    width: 38%;
+  }
+
+  .item2 {
+    width: 130px;
+    margin-top: 2px;
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+  .transportation {
+    width: 38%;
+  }
+
+  .item3 {
+    width: 130px;
+    margin-top: 3px;
+    margin-left: 4px;
+    margin-right: 0px;
+  }
+  .toys {
+    width: 38%;
+  }
+
+  .item4 {
+    width: 130px;
+    margin-left: 30px;
+    margin-top: 3px;
+    margin-right: 0px;
+  }
+  .bowls-and-cups {
+    width: 38%;
+  }
+
+  .item5 {
+    width: 130px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-right: 0px;
+  }
+  .shampoos {
+    width: 38%;
+  }
+
+  .item6 {
+    width: 130px;
+    margin-left: 30px;
+    margin-top: 4px;
+    margin-right: 0px;
+  }
+  .vitamins {
+    width: 38%;
+  }
+
+  .item7 {
+    width: 130px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-right: 0px;
+  }
+  .medicines {
+    width: 38%;
+  }
+
+  .item8 {
+    width: 130px;
+    margin-left: 30px;
+    margin-top: 4px;
+    margin-right: 0px;
+  }
+  .collars-leashes {
+    width: 38%;
+  }
+
+  .item9 {
+    width: 130px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-right: 0px;
+  }
+  .sleeping-area {
+    width: 38%;
+  }
+
+  /* ### ADDITION ### */
+
+  .wrapper_donation {
+    flex-direction: column-reverse;
+    
+  }
+
+  .heading_donation-dog {
+    margin-left: 1px;
+    margin-bottom: 1px;
+  }
+
+  .title_donation {
+    margin-top: 40px;
+    width: 220px;
+    margin-left: 40px;  
+  }
+
+  .donation-subtitle {
+    margin-top: -1px;
+    margin-left: 12px;
+    width: 320px;    
+    letter-spacing: 0.001em;
+  }
+
+  .account-style {
+    width: 281px;
+    margin-top: -2px;
+    margin-left: 8px;
+  }
+
+  .card-syle {
+    font-size: 15px;
+  }
+
+  .donation_info {
+    width: 280px;
+    height: 90px;
+    margin-left: 8px;
+    text-align: justify;
+  }
+
+  .img_donation-dog {
+    margin-top: 29px;
+    margin-left: 20px;
+    margin-bottom: 42px;
+    width: 260px;
+    height: 135px;
+  }
+  .d-dog {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ### FOOTER ### */
+
+  .footer-blok-info {
+    @include flexColumn();
+  }
+
+  .h3_footer {
+    margin: 0;
+  }
+
+  .f_1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 1px;
+    margin-top: 7px;
+  }
+
+  .footer-style {   
+    margin: 0;  
+  }
+
+  .box_up1 {
+    margin-top: 32px;
+    margin-left: 25px;
+  }
+
+  .box_down1 {
+    margin-top: 22px;
+    margin-left: 30px;
+  }
+
+  .box_possition-center {
+    // margin-left: 15px;
+    width: 320px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .f_2 {
+    font-size: 25px;
+    text-align: center;
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 28px;
+  }
+
+  .box_up2 {
+    margin-top: 39px;
+    margin-left: 0px;
+  }
+
+  .box_down2 {
+    margin-top: 29px;
+    margin-left: 0px;
+  }
+
+  .dog_size {
+    width: 260px;
+    height: 269px;
+  }
+  
+  .box_possition-right {
+    margin-left: 20px;
+    margin-top: 30px;
   }
 
 }
