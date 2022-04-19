@@ -638,7 +638,7 @@
     margin-top: 22px;
   }
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
    
     .container {
       width: 768px;
@@ -879,7 +879,7 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 1279px) and (max-width: 767px) {
 
   .container {
     width: 320px;
