@@ -101,7 +101,7 @@ h1 {
 }
 
 .text_logo {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -165,7 +165,7 @@ h1 {
 }
 
 .nav-link {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -241,7 +241,7 @@ h1 {
 }
 
 .no-subtitle {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -348,7 +348,7 @@ h1 {
 }
 
 .about-subtitle {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -374,10 +374,11 @@ h1 {
 
 .left-btn {
   position: reltive;
-  height: 50px;
-  width: 50px;
+  height: 52px;
+  width: 52px;
   border-radius: 50%;
   border: 2px solid #F1CDB3;
+  background-color: transparent;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   margin-top: 193px;
@@ -391,10 +392,11 @@ h1 {
 
 .right-btn {
   position: reltive;
-  height: 50px;
-  width: 50px;
+  height: 52px;
+  width: 52px;
   border-radius: 50%;
   border: 2px solid #F1CDB3;
+  background-color: transparent;
   margin-left: 54px;
   margin-top: 193px;
   cursor: pointer;
@@ -752,7 +754,7 @@ h1 {
 }
 
 .donation_info {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-style: italic;
@@ -868,7 +870,11 @@ h1 {
   cursor: pointer;
 }
 
-.down {
+.box_down1 {
+  margin-top: 22px;
+}
+
+.box_down2 {
   margin-top: 22px;
 }
 
@@ -1195,6 +1201,7 @@ h1 {
   }
   .img-puppy {
     width: 260px;
+    height: 271px;
     margin-top: 80px;
     margin-left: 38px;
   }
@@ -1263,7 +1270,7 @@ h1 {
         flex-wrap: nowrap;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 15px;
+    margin-left: 2px;
     margin-top: 17px;
     width: 275px;
     height: 435px;
@@ -1430,6 +1437,10 @@ h1 {
     height: 100%;
   }
   /* ### FOOTER ### */
+  .footer_container {
+    margin-top: 23px;
+    margin-left: 0px;
+  }
   .footer-blok-info {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -99,7 +99,7 @@ h1 {
 }
 
 .text_logo {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -165,7 +165,7 @@ h1 {
 }
 
 .nav-link {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -353,8 +353,8 @@ h1 {
 }
 
 .btn {
-  height: 50px;
-  width: 50px;
+  height: 52px;
+  width: 52px;
   border-radius: 50%;
   border: 2px solid #F1CDB3;
   margin-top: 193px;
@@ -473,8 +473,16 @@ h1 {
   cursor: pointer;
 }
 
-.down {
-  margin-top: 22px;
+.tel_img {
+  margin-top: 2px;
+}
+
+.box_down1 {
+  margin-top: 21px;
+}
+
+.box_down2 {
+  margin-top: 21px;
 }
 
 @media (max-width: 1279px) {
@@ -569,6 +577,12 @@ h1 {
     margin-left: 233px;
     margin-top: 55px;
   }
+  .box_down1 {
+    margin-top: 21px;
+  }
+  .box_down2 {
+    margin-top: 21px;
+  }
 }
 
 @media (max-width: 1279px) and (max-width: 767px) {
@@ -643,7 +657,7 @@ h1 {
     width: 300px;
     margin-left: 10px;
     margin-bottom: 140px;
-    margin-top: -115px;
+    margin-top: -85px;
   }
   /* ### FOOTER ### */
   .footer-blok-info {
@@ -657,6 +671,10 @@ h1 {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding-left: 10px;
+  }
+  .footer-info {
+    margin-top: 23px;
+    margin-left: 0px;
   }
   .h3_footer {
     margin: 0;

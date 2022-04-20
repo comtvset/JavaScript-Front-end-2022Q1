@@ -54,7 +54,7 @@
   }
 
   @mixin fontFamilyArial() {
-    font-family: 'Arial';
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
   }
@@ -273,8 +273,8 @@
   }
 
   .btn {
-    height: 50px;
-    width: 50px;
+    height: 52px;
+    width: 52px;
     border-radius: 50%;
     border: 2px solid #F1CDB3;
     margin-top: 193px;
@@ -356,8 +356,16 @@
     cursor: pointer;
   }
 
-  .down {
-    margin-top: 22px;
+  .tel_img {
+    margin-top: 2px;
+  }
+
+  .box_down1 {
+    margin-top: 21px;
+  }
+
+  .box_down2 {
+    margin-top: 21px;
   }
 
   @media (max-width: 1279px) {
@@ -483,6 +491,14 @@
       margin-top: 55px;
     }
 
+    .box_down1 {
+      margin-top: 21px;
+    }
+  
+    .box_down2 {
+      margin-top: 21px;
+    }
+
   }
 
   @media (max-width: 1279px) and (max-width: 767px) {
@@ -567,7 +583,7 @@
       width: 300px;
       margin-left: 10px;
       margin-bottom: 140px;
-      margin-top: -115px;      
+      margin-top: -85px;      
     }
 
     /* ### FOOTER ### */
@@ -575,6 +591,11 @@
     .footer-blok-info {
     @include flexColumn();
     padding-left: 10px;
+    }
+
+    .footer-info {
+      margin-top: 23px;
+      margin-left: 0px;  
     }
 
     .h3_footer {
