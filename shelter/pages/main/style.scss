@@ -130,6 +130,8 @@
     margin-right: -33px;
   }
 
+
+
   .nav-item {
     margin-right: 35px;
   }
@@ -199,7 +201,11 @@
     color: #FFFFFF;
     width: 310px;
     height: 114px;    
-    margin-top: 0;    
+    margin-top: 0; 
+    
+    background-color: red;
+    width: 350px;
+    height: 400px;
   }
 
   .no-subtitle {
@@ -891,6 +897,7 @@
     margin: 0 auto;
 
     overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .wrapper {
@@ -901,6 +908,104 @@
   .nav {
     display: none;
   }
+
+  #fbmenu {
+    overflow: hidden;
+  }
+
+
+  #menu__toggle {
+    opacity: 0;
+    
+  }
+  
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 9px;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: -9px;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+
+  .menu__btn {
+    // position: fixed;
+    position: absolute;
+    top: 59px;
+    left: 238px;
+    width: 26px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 3;
+    
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #F1CDB3;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+ 
+  .menu__box {
+    display: block;
+    position: absolute;
+    // position: fixed;
+    top: 0;
+    left: 100%;
+    
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    padding: 100px 0;
+    list-style: none;
+    background-color:  #292929;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+ 
+    z-index: 2;
+    body {
+      overflow: hidden;
+    }
+  }
+  .nav-link {
+    display: block;
+    // padding: 12px 24px;
+    color: #CDCDCD;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+  
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .nav-link:hover {
+    background-color: #CFD8DC;
+  }
+
+
+
+
+
+
+
 
   .simbol_320 {
     display: block;

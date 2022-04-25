@@ -238,6 +238,9 @@ h1 {
   width: 310px;
   height: 114px;
   margin-top: 0;
+  background-color: red;
+  width: 350px;
+  height: 400px;
 }
 
 .no-subtitle {
@@ -1135,6 +1138,7 @@ h1 {
     width: 320px;
     margin: 0 auto;
     overflow-x: hidden;
+    overflow-y: visible;
   }
   .wrapper {
     width: 300px;
@@ -1142,6 +1146,90 @@ h1 {
   }
   .nav {
     display: none;
+  }
+  #fbmenu {
+    overflow: hidden;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 9px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: -9px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: absolute;
+    top: 59px;
+    left: 238px;
+    width: 26px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #F1CDB3;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    padding: 100px 0;
+    list-style: none;
+    background-color: #292929;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+    z-index: 2;
+  }
+  .menu__box body {
+    overflow: hidden;
+  }
+  .nav-link {
+    display: block;
+    color: #CDCDCD;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    text-decoration: none;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .nav-link:hover {
+    background-color: #CFD8DC;
   }
   .simbol_320 {
     display: block;
