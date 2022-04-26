@@ -597,17 +597,119 @@ h1 {
   .nav {
     display: none;
   }
-  .simbol_320 {
-    display: block;
+  body._lock {
+    overflow: hidden;
+  }
+  .fbmenu {
+    z-index: 4;
+    position: relative;
+    height: 22px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 27px;
+  }
+  .fbmenu span,
+  .fbmenu::before,
+  .fbmenu::after {
+    left: 0;
     position: absolute;
-    margin-left: 226px;
-    margin-top: 0px;
-    color: black;
-    font-size: 60px;
+    height: 10%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #545454;
+  }
+  .fbmenu::before,
+  .fbmenu::after {
+    content: "";
+  }
+  .fbmenu::before {
+    top: 0;
+  }
+  .fbmenu::after {
+    bottom: 0;
+  }
+  .fbmenu span {
+    top: 50%;
+    -webkit-transform: scale(1) translate(0px, -50%);
+            transform: scale(1) translate(0px, -50%);
+  }
+  .fbmenu._active span {
+    top: 50%;
+    left: -10px;
+    -webkit-transform: rotate(90deg) translate(0px, 50%);
+            transform: rotate(90deg) translate(0px, 50%);
+  }
+  .fbmenu._active::before {
+    top: 50%;
+    left: 10px;
+    -webkit-transform: rotate(90deg) translate(0px, 50%);
+            transform: rotate(90deg) translate(0px, 50%);
+  }
+  .fbmenu._active::after {
+    top: 50%;
+    -webkit-transform: rotate(90deg) translate(0px, 50%);
+            transform: rotate(90deg) translate(0px, 50%);
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background-color: #FFFFFF;
+    padding-top: 237px;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    margin: 0;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    z-index: 3;
+    overflow-y: scroll;
+    text-align: center;
+  }
+  .menu__box._active {
+    -webkit-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+  }
+  .logo._active {
+    z-index: 10;
+  }
+  body._active {
+    background: rgba(41, 41, 41, 0.6);
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+  }
+  .nav-link {
+    display: block;
+    color: #CDCDCD;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    text-decoration: none;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .nav-link:hover {
+    background-color: #CFD8DC;
+  }
+  .nav-item {
+    margin: 0;
+    margin-bottom: 20px;
   }
   .wrapper_header {
     margin-left: 10px;
     margin-top: 1px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   /* ### FRIENDS ### */
   .heading_friends {
